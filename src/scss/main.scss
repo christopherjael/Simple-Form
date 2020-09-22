@@ -85,16 +85,55 @@ a {
       font-size: medium;
       border-radius: 41px;
       box-shadow: 0px 3px 6px rgba($secondary-font-color, $alpha: 0.165);
+      transition: all .5s ease;
+    }
+
+    .btn-container{
+      display: flex;
+      justify-content: space-around;
+      width: 300px;
     }
 
     .btn--login {
       background-color: $primary-color;
+
+      &:hover{
+        background: $secondary-color;
+      }
 
       img {
         width: 30px;
         height: 30px;
       }
 
+    }
+
+    .btn--back{
+      border: $primary-color 1px solid;
+
+      & svg{
+        stroke: $primary-color;
+        fill: none;
+        width: 35px;
+      }
+
+      &:hover svg{
+        stroke: #ffffff;
+      }
+
+
+      &:hover{
+        background: $primary-color;
+      }
+    }
+
+    .btn--create{
+      background: $primary-color;
+
+      svg{
+        width: 30px;
+        fill: #ffffff;
+      }
     }
 
     .btn--register {
@@ -104,6 +143,11 @@ a {
       background-color: #ffffff;
       border: 1px solid $primary-color;
       color: $primary-color;
+
+      &:hover{
+        background: $primary-color;
+        color: #ffffff;
+      }
 
       a {
         color: $primary-color;

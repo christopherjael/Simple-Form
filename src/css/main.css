@@ -70,13 +70,43 @@ a {
   font-size: medium;
   border-radius: 41px;
   box-shadow: 0px 3px 6px rgba(112, 112, 112, 0.165);
+  transition: all 0.5s ease;
+}
+.form-content .form_content__form .btn-container {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
 }
 .form-content .form_content__form .btn--login {
   background-color: #407bff;
 }
+.form-content .form_content__form .btn--login:hover {
+  background: #8faff5;
+}
 .form-content .form_content__form .btn--login img {
   width: 30px;
   height: 30px;
+}
+.form-content .form_content__form .btn--back {
+  border: #407bff 1px solid;
+}
+.form-content .form_content__form .btn--back svg {
+  stroke: #407bff;
+  fill: none;
+  width: 35px;
+}
+.form-content .form_content__form .btn--back:hover svg {
+  stroke: #ffffff;
+}
+.form-content .form_content__form .btn--back:hover {
+  background: #407bff;
+}
+.form-content .form_content__form .btn--create {
+  background: #407bff;
+}
+.form-content .form_content__form .btn--create svg {
+  width: 30px;
+  fill: #ffffff;
 }
 .form-content .form_content__form .btn--register {
   margin-top: -10px;
@@ -85,6 +115,10 @@ a {
   background-color: #ffffff;
   border: 1px solid #407bff;
   color: #407bff;
+}
+.form-content .form_content__form .btn--register:hover {
+  background: #407bff;
+  color: #ffffff;
 }
 .form-content .form_content__form .btn--register a {
   color: #407bff;
