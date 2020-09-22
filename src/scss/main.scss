@@ -1,0 +1,122 @@
+/* CODE BY CHRISTOPHER MONTERO D'OLEO */
+$font: "Nunito", sans-serif;
+$font-color: #263238;
+$secondary-font-color: #707070;
+$laber-color: #dfdfdf;
+$primary-color: #407bff;
+$secondary-color: #8faff5;
+
+main {
+  font-family: $font;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.form-content {
+  display: flex;
+  width: 900px;
+  height: 400px;
+  box-shadow: 0px 3px 6px rgba($secondary-font-color, $alpha: 0.1);
+
+  .form-content__ilustration-content {
+    width: 50%;
+    background-color: $secondary-color;
+
+    .form-content__ilustration-content .ilustration {
+      width: 100%;
+    }
+  }
+
+  .form_content__form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h1 {
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .input-control {
+      margin-bottom: 1rem;
+
+      & label {
+        color: $font-color;
+        font-size: larger;
+        margin-left: 1rem;
+      }
+
+      & input {
+        outline: none;
+        padding-left: 1rem;
+        border: 1px solid #000000;
+        width: 300px;
+        height: 35px;
+        border-radius: 41px;
+        font-size: medium;
+      }
+
+      & input:focus{
+        border-width: 1px;
+        border-color: $primary-color;
+      }
+
+      & input::placeholder {
+        font-size: medium;
+      }
+    }
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: none;
+      cursor: pointer;
+      width: 140px;
+      height: 35px;
+      border-style: none;
+      font-size: medium;
+      border-radius: 41px;
+      box-shadow: 0px 3px 6px rgba($secondary-font-color, $alpha: 0.165);
+    }
+
+    .btn--login {
+      background-color: $primary-color;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+
+    }
+
+    .btn--register {
+      margin-top: -10px;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      background-color: #ffffff;
+      border: 1px solid $primary-color;
+      color: $primary-color;
+
+      a {
+        color: $primary-color;
+      }
+    }
+
+    hr {
+      width: 200px;
+      background-color: $secondary-font-color;
+    }
+    
+    a{
+      color: $primary-color;
+    }
+  }
+}
